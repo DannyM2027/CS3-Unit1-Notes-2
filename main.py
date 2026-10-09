@@ -35,5 +35,16 @@ def main():
     sorted_classes = sorted(my_classes)
     print(sorted_classes)
 
+    coloros_a = ["blue," "turq" "bblue" "red"]
+    coloros_b = ["blue," "orange" "yellow" "brown"]
+
+    colors_a.extend(coloros_b)
+    print(coloros_a)
+
+    count = coloros_a.index("orange")
+    count = coloros_a.count("blue")
+    print({count})
+    coloros_a(coloros_a.index("turq"))] = "green"
+
 if __name__ == "__main__":
     main()
