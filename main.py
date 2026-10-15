@@ -11,7 +11,6 @@ def main():
     print(my_classes[2])
     print(my_classes[len(my_classes)-1])
     print(my_list[0])
-    print(my_classes[1] = "apcomp")
     print(my_classes)
 
     print(my_classes.index("journ"))
@@ -35,16 +34,42 @@ def main():
     sorted_classes = sorted(my_classes)
     print(sorted_classes)
 
-    coloros_a = ["blue," "turq" "bblue" "red"]
-    coloros_b = ["blue," "orange" "yellow" "brown"]
+    colors_a = ["blue," "turq" "bblue" "red"]
+    colors_b = ["blue," "orange" "yellow" "brown"]
 
-    colors_a.extend(coloros_b)
-    print(coloros_a)
+    colors_a.extend(colors_b)
+    print(colors_a)
 
-    count = coloros_a.index("orange")
-    count = coloros_a.count("blue")
+    count = colors_a.index("orange")
+    count = colors_a.count("blue")
     print({count})
-    coloros_a(coloros_a.index("turq"))] = "green"
+    colors_a(colors_a.index("turq")) == "green"
+
+    colors_a.remove("green")
+    print(colors_a)
+
+    repeats = ["book", "pencil", "book", "folder", "robot", "pen," "pencil"]
+    print(repeats.index("pencil"))
+
+    temp = repeats
+    while "pencil" in temp:
+        print(temp.index("pencil"))
+        temp = temp[temp.index("pencil") +1:]
+
+    print(repeats)
+    repeats.remove("pencil")
+    print(repeats)
+
+    # we can use .pop(index)
+    print(repeats.pop(4))
+
+    # tuples
+
+    my_tuple = (2, 5, 8)
+    print(my_tuple)
+
+    if 5 in my_tuple:
+        print(my_tuple.index(5))
 
 if __name__ == "__main__":
     main()
